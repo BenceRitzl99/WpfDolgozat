@@ -7,14 +7,14 @@
         TargetType="RadioButton">
         <Setter Property="Foreground" Value="White"></Setter>
         <Setter Property="FontSize"  Value="15"></Setter>
-        <Setter Property="Height" Value="50"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
         <Setter Property="Background" Value="Transparent"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
                     <Grid>
                         <TextBlock Text="{TemplateBinding Content}" Background="{TemplateBinding Background}" 
-                                   Padding="50,14,0,0"></TextBlock>
+                                   Padding="50,4,0,0"></TextBlock>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

@@ -5,8 +5,40 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfDolgozat.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+             d:DesignHeight="480" d:DesignWidth="600">
+    <Border Background="LightBlue" Margin="-720,0,40,40">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <TextBlock Text="Information 8" FontSize="25" Foreground="DeepSkyBlue" Margin="350,40,0,0" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+            <ListBox Grid.Column="1" Grid.Row="1" Margin="-440,20,120,80"></ListBox>
+            <ListBox Grid.Column="2" Grid.Row="1" Margin="-90,20,40,80"/>
+            <StackPanel Grid.Row="1" Margin="40,150,0,0">
+                <TextBlock Text="Quantity:" FontSize="14"></TextBlock>
+            </StackPanel>
+            <Button Grid.Row="1" Height="30" Width="100" Margin="200,300,0,0"
+                    Content="Add to Cart" Background="Blue" FontWeight="Bold" Padding="0,0,0,0" Foreground="white">
+                
+            </Button>
+            <Button Grid.Row="1" Height="30" Width="100" Margin="450,300,0,0"
+                    Content="Buy Now" Background="Red">
+                
+            </Button>
+            <CheckBox Grid.Row="1" Margin="40,335,0,0" >
+                <TextBlock Text="Add to wishlist" Foreground="deepskyBlue"/>
+            </CheckBox>
             
-    </Grid>
+
+        </Grid>
+    </Border>
 </UserControl>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfDolgozat" 
         xmlns:viewmodel="clr-namespace:WpfDolgozat.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="1200" Background="Transparent" AllowsTransparency="True" WindowStyle="None">
+        Title="MainWindow" Height="550" Width="1100" Background="Transparent" AllowsTransparency="True" WindowStyle="None">
     <Border CornerRadius="20">
         <Border.Background>
             <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
@@ -30,11 +30,12 @@
             </StackPanel>
             <StackPanel Grid.Row="1">
                 <RadioButton Content="Task 1" Command="{Binding openTask1}" Style="{StaticResource TaskButton}" Margin="0,20,700,0"></RadioButton>
-                <RadioButton Content="Task 2" Command="{Binding openTask2}" Style="{StaticResource TaskButton}" Margin="0,0,700,0"></RadioButton>
-                <RadioButton Content="Task 3" Command="{Binding openTask3}" Style="{StaticResource TaskButton}" Margin="0,0,700,0"></RadioButton>
-                <RadioButton Content="Close" Click="RadioButton_ClickClose" Style="{StaticResource TaskButton}" Margin="0,0,700,0"></RadioButton>
+                <RadioButton Content="Task 2" Command="{Binding openTask2}" Style="{StaticResource TaskButton}" Margin="0,20,700,0"></RadioButton>
+                <RadioButton Content="Task 3" Command="{Binding openTask3}" Style="{StaticResource TaskButton}" Margin="0,20,700,0"></RadioButton>
+                <RadioButton Content="Close" Click="RadioButton_ClickClose" Style="{StaticResource TaskButton}" Margin="0,20,700,0"></RadioButton>
             </StackPanel>
             <ContentControl Content="{Binding CurrentView}" Grid.Row="1" Grid.Column="1"></ContentControl>
+            
             
         </Grid>
     </Border>
