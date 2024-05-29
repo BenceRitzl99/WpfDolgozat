@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfDolgozat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDolgozat" 
+        xmlns:viewmodel="clr-namespace:WpfDolgozat.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1200" Background="Transparent" AllowsTransparency="True" WindowStyle="None">
+    <Border CornerRadius="20">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Color="#272537"/>
+                <GradientStop Color="#272537" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <TextBlock Text="School Paper" Foreground="White" FontSize="22" Margin="20,20,0,0" Padding="0,0,750,0" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"></TextBlock>
+                
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Task 1" Command="{Binding openTask1}" Style="{StaticResource TaskButton}" Margin="0,20,700,0"></RadioButton>
+                <RadioButton Content="Task 2" Command="{Binding openTask2}" Style="{StaticResource TaskButton}" Margin="0,0,700,0"></RadioButton>
+                <RadioButton Content="Task 3" Command="{Binding openTask3}" Style="{StaticResource TaskButton}" Margin="0,0,700,0"></RadioButton>
+                <RadioButton Content="Close" Click="RadioButton_ClickClose" Style="{StaticResource TaskButton}" Margin="0,0,700,0"></RadioButton>
+            </StackPanel>
+            <ContentControl Content="{Binding CurrentView}" Grid.Row="1" Grid.Column="1"></ContentControl>
+            
+        </Grid>
+    </Border>
+</Window>
