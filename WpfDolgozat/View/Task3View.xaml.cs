@@ -26,33 +26,28 @@ namespace WpfDolgozat.View
     /// </summary>
     public partial class Task3View : UserControl
     {
-        public ObservableCollection<User> User;
-        public Context context;
         public Task3View()
         {
             InitializeComponent();
-            User = new ObservableCollection<User>();
-            context = new Context();
-            Init();
-            Refresh();
-            lbPeople.ItemsSource = User;
-            spInput.DataContext = User;
         }
 
-        private void Refresh()
+       
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            User.Clear();
-
-            if (context.User.Any())
-            {
-                foreach (var line in sorok)
-                {
-                    context.User.Add(new User(line));
-                }
-                context.SaveChanges();
-            }
+            
         }
 
-        
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+            
+
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

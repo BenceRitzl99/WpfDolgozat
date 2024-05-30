@@ -2014,19 +2014,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Diak\\.nuget\\packages\\": {}
+    "C:\\Users\\Rgazda\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diak\\..rb\\Második félév\\Asztali alkalmazások\\2024-05-30\\WpfDolgozat\\WpfDolgozat\\WpfDolgozat.csproj",
+      "projectUniqueName": "C:\\Users\\Rgazda\\..rb\\asztali\\2024-05-29\\Dolgozat\\Dolgozat\\WpfDolgozat\\WpfDolgozat\\WpfDolgozat.csproj",
       "projectName": "WpfDolgozat",
-      "projectPath": "C:\\Users\\Diak\\..rb\\Második félév\\Asztali alkalmazások\\2024-05-30\\WpfDolgozat\\WpfDolgozat\\WpfDolgozat.csproj",
-      "packagesPath": "C:\\Users\\Diak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diak\\..rb\\Második félév\\Asztali alkalmazások\\2024-05-30\\WpfDolgozat\\WpfDolgozat\\obj\\",
+      "projectPath": "C:\\Users\\Rgazda\\..rb\\asztali\\2024-05-29\\Dolgozat\\Dolgozat\\WpfDolgozat\\WpfDolgozat\\WpfDolgozat.csproj",
+      "packagesPath": "C:\\Users\\Rgazda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rgazda\\..rb\\asztali\\2024-05-29\\Dolgozat\\Dolgozat\\WpfDolgozat\\WpfDolgozat\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Diak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rgazda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2034,6 +2039,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2084,6 +2090,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -2092,7 +2116,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

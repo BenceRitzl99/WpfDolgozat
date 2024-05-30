@@ -103,7 +103,7 @@ namespace WpfDolgozat.Models
         public string Work { get; set; }
         public string Hobby { get; set; }
 
-        public User()
+        public User(object line)
         {
 
         }

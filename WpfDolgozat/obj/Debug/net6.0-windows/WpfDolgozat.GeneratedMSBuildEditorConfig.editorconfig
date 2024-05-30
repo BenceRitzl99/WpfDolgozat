@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WpfDolgozat
-build_property.ProjectDir = C:\Users\Diak\..rb\Második félév\Asztali alkalmazások\2024-05-30\WpfDolgozat\WpfDolgozat\
+build_property.ProjectDir = C:\Users\Rgazda\..rb\asztali\2024-05-29\Dolgozat\Dolgozat\WpfDolgozat\WpfDolgozat\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
