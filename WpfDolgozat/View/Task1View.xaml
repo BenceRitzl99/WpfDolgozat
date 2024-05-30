@@ -6,7 +6,13 @@
              xmlns:local="clr-namespace:WpfDolgozat.View"
              mc:Ignorable="d" 
              d:DesignHeight="480" d:DesignWidth="600">
-    <Border Background="Aquamarine" CornerRadius="10" Margin="-720,0,40,40">
+    <Border CornerRadius="10" Margin="-720,0,40,40">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="1,1" EndPoint="0.5,0">
+                <GradientStop Color="Gray"/>
+                <GradientStop Color="orange" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Border.Background>
         <Grid>
             <StackPanel>
                 <TextBlock Text="Task 1" FontSize="20" Margin="10,10,0,0"></TextBlock>
